@@ -4,4 +4,5 @@ from django import forms
 from django.shortcuts import render, HttpResponse
 
 def home(request):
-    return render(request, 'registration/login.html')
+    return render(request, 'home.html',{})
+
