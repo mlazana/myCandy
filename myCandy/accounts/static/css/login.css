@@ -1,0 +1,145 @@
+body,
+html {
+  /* The image used */
+  background-image: url("../images/background1.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h2 {
+  font: 400 100px/1.3 "Oleo Script", Helvetica, sans-serif;
+  color: #2b2b2b;
+  text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+}
+h3 {
+  color: #ff678d;
+}
+/* -----Nav bar----- */
+nav {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+nav a {
+  font: 1.2em/1em sans-serif;
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+/* -----End nav bar----- */
+
+/* -----Login card----- */
+
+.cardPlace {
+  margin-top: 7%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+}
+
+.formInput {
+  padding-top: 3%;
+  width: 60%;
+  margin: auto;
+  padding-bottom: 5%;
+  resize: vertical;
+}
+
+.card {
+  border-radius: 6.25rem !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 16px 24px 0 rgba(253, 113, 167, 0.2);
+}
+
+.card-img-top {
+  border-radius: 4.25rem 4.25rem 0 0 !important;
+}
+
+.form-content {
+  padding-top: 30px;
+}
+
+.button {
+  width: 40%;
+  background: linear-gradient(to right, #ff6795, #f788ad);
+  color: white;
+  padding: 20px 35px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+#login {
+}
+
+/* -----End Login card----- */
+
+/* -----Head content----- */
+
+.headContent {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+}
+
+/* -----End Head content----- */
+
+@media (max-width: 1064px) {
+  .cardPlace {
+    display: flex;
+    padding: 15%;
+    flex-direction: row;
+    margin-top: 2%;
+  }
+
+  .card {
+    border-radius: 2.25rem !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+  }
+
+  .card-img-top {
+    border-radius: 2.25rem 2.25rem 0 0 !important;
+  }
+
+  h2 {
+    font: 400 50px/1.3 "Oleo Script", Helvetica, sans-serif;
+    color: #2b2b2b;
+    text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+    width: 90%;
+  }
+  .formInput {
+    padding-top: 3%;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 5%;
+    resize: vertical;
+  }
+
+  .button {
+    width: 40%;
+    background: linear-gradient(to right, #ff6795, #f788ad);
+    color: white;
+    padding: 10px 25px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+  }
+}
