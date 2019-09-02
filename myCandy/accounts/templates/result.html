@@ -1,0 +1,17 @@
+{% extends 'basic.html' %} {% load static %} {% block content %}
+
+<div class="cardPlace">
+  <div class="card" style="width: 40rem;">
+    <div class="card-body">
+      <h3><b>Your order : </b></h3>
+      <hr />
+      <h4>Amount : 5 candies</h4>
+      <hr />
+      <h3>Price : {{ result }} $</h3>
+      <a href="/home" class="backButton">Back</a>
+    </div>
+  </div>
+</div>
+
+{% endblock %} {% block header %}
+<link href="{% static 'css/result.css' %}" rel="stylesheet" /> {% endblock %}
