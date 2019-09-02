@@ -1,0 +1,26 @@
+{% extends 'basic.html' %} {% load static %} {% block content %}
+<div class="container">
+  <div class="headContent">
+    <h2>Candies are unlimited, it's up to you!</h2>
+  </div>
+  <div class="iputForm">
+    <form id="moneyForm" method="post">
+      <div class="input-group input-group-lg">
+        {% csrf_token %}
+        <input
+          type="text"
+          class="form-control"
+          aria-label="Large"
+          aria-describedby="inputGroup-sizing-sm"
+          id="moneyValue"
+          name="moneyValue"
+          placeholder="Type your offering value..."
+        />
+
+        <button type="submit" class="button">Sumbit</button>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock %} {% block header %}
+<link href="{% static 'css/home.css' %}" rel="stylesheet" /> {% endblock %}

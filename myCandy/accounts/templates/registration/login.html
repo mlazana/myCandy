@@ -1,0 +1,45 @@
+{% extends 'basic.html' %} {% load static %} {% block content %}
+<div class="headContent">
+  <h2 style="color: white;">
+    <b>"Life is better with candies"</b>
+  </h2>
+</div>
+
+<div class="cardPlace">
+  <div class="card" style="width: 40rem;">
+    <img src="../../static/images/image.jpg" class="card-img-top" alt="..." />
+    <div class="card-body">
+      <h3><b>Login</b></h3>
+      <form id="login-form" method="post">
+        {% csrf_token %}
+        <div class="formInput">
+          <input
+            id="id_username"
+            name="username"
+            type="text"
+            class="form-control"
+            placeholder="Type your username..."
+          />
+        </div>
+        <div class="formInput">
+          <input
+            id="id_password"
+            name="password"
+            type="password"
+            class="form-control"
+            placeholder="Type your password..."
+          />
+        </div>
+        {% if form.errors %}
+        <p class=" label label-danger">
+          Your username and password didn't match. Please try again.
+        </p>
+        {% endif %}
+        <button type="submit" class="button">login</button>
+        <input type="hidden" name="next" value="{{ next }}" />
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %} {% block header %}
+<link href="{% static 'css/login.css' %}" rel="stylesheet" /> {% endblock %}
