@@ -7,8 +7,15 @@ from .forms import valueForm
 def home(request):
     if request.method == "POST":
         form = valueForm(request.POST)
-        text = form['moneyValue'].value()
-        return  render(request, 'result.html',{'result':text})
+        money = int(form['moneyValue'].value())
+
+        result = money // 5
+        extra = result // 3
+
+        if extra > 0 :
+            result += extra
+
+        return  render(request, 'result.html',{'result':result, 'money': money})
     else:
         return render(request, 'home.html')
 

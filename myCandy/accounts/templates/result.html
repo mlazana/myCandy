@@ -5,10 +5,15 @@
     <div class="card-body">
       <h3><b>Your order : </b></h3>
       <hr />
-      <h4>Amount : 5 candies</h4>
+      {% if result > 1 %}
+      <h4>Amount : {{ result }} candies</h4>
+      {% else %}
+      <h4>Amount : {{ result }} candy</h4>
+      {% endif %}
+
       <hr />
-      <h3>Price : {{ result }} $</h3>
-      <a href="/home" class="backButton">Back</a>
+      <h3>Price : {{ money }} $</h3>
+      <a href="/home" class="backButton"> Back</a>
     </div>
   </div>
 </div>
