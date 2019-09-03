@@ -8,11 +8,13 @@
       <div class="input-group input-group-lg">
         {% csrf_token %}
         <input
-          type="text"
+          type="number"
           class="form-control"
           aria-label="Large"
+          min="0"
           aria-describedby="inputGroup-sizing-sm"
           id="moneyValue"
+          data-bind="value:replyNumber"
           name="moneyValue"
           placeholder="Type your offering value..."
         />
