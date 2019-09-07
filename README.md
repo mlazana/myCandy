@@ -1,6 +1,6 @@
 <div align="center">
 <img src="img/logo.png" height="80px" >
-<h1> Web application created with Django framework
+<h1> Web application created using Django framework
 
 </h1>
 
